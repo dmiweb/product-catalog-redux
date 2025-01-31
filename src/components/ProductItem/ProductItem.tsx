@@ -25,16 +25,16 @@ const ProductItem = ({ product }: { product: TProduct }) => {
           {discount ? `${calcDiscountPrice(price, discount)} ₽` : `${price} ₽`}
         </span>
         <span className='product__price-base'>
-          {discount && `${price} ₽`}
+          {discount ? `${price} ₽` : null}
         </span>
       </div>
 
       {
-        discount &&
+        discount ?
         <div className='product__widget-discount widget-discount'>
           <div className='widget-discount__decor-elem'></div>
           <span className='widget-discount__percent'>{`${discount}%`}</span>
-        </div>
+        </div> : null
       }
     </li>
   );
