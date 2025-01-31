@@ -1,0 +1,164 @@
+.add-form__container-background_blur {
+  position: absolute;
+  top:0; right: 0; left:0; bottom:0;
+  backdrop-filter: blur(3px);
+  z-index: 998;
+}
+
+.add-form {
+  position: fixed;
+  left: 50%;
+  width: 350px;
+  margin: 40px auto 0;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0 0 3px 1px #c4c4c4;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.add-form__title {
+  margin: 0px 0 20px 0;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #505050;
+}
+
+.add-form__image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.add-form__image-upload {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  box-shadow: 0 0 1px 1px #c4c4c4;
+  border-radius: 5px;
+}
+
+.image-upload__input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  width: 100%;
+  opacity: 0.1;
+  cursor: pointer;
+}
+
+.image-upload__overlap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 5px;
+  background-color: #ffffff;
+  pointer-events: none;
+}
+
+.image-upload__overlap-icon {
+  width: 70%;
+}
+
+.add-form__image-preview {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 5px;
+  min-width: 150px;
+  max-width: 150px;
+  height: 150px;
+  border-radius: 5px;
+  box-shadow: 0 0 1px 1px #c4c4c4;
+}
+
+.image-preview__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: contain;
+}
+
+.error-upload-message {
+  position: absolute;
+  right: 50px;
+  font-size: 15px;
+  color: red;
+}
+
+.add-form__fields {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px 0
+}
+
+.add-form__field-title {
+  height: 36px;
+  box-shadow: 0 0 1px 1px #c4c4c4;
+}
+
+.add-form__price-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.add-form__field-price {
+  height: 36px;
+  box-shadow: 0 0 1px 1px #c4c4c4;
+}
+
+.add-form__field-discount {
+  height: 36px;
+  box-shadow: 0 0 1px 1px #c4c4c4;
+}
+
+.add-form__btns {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.add-form__submit-btn,
+.add-form__cancel-btn {
+  padding: 9px 20px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 1px 1px #c4c4c4;
+  font-size: 1rem;
+  color: #4d4d4d;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.add-form__close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -25px;
+  right: -25px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 0 0 1px 1px #505050;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  color: #505050;
+  cursor: pointer;
+}
+
+.add-form__close-btn:hover {
+  color: #ff0303;
+  box-shadow: 0 0 3px 1px #b80000;
+}
