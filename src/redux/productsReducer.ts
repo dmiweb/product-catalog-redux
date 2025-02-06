@@ -6,7 +6,7 @@ const initialState: TState = {
   products: [],
 };
 
-const itemsReducer = (state: TState = initialState, action: TAction): TState => {
+const productsReducer = (state: TState = initialState, action: TAction): TState => {
   switch (action.type) {
     case SHOW_ADD_FORM:
       return {
@@ -23,4 +23,4 @@ const itemsReducer = (state: TState = initialState, action: TAction): TState => 
   }
 };
 
-export default itemsReducer;
+export default productsReducer;
